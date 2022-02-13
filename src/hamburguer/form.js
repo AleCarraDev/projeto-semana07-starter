@@ -10,9 +10,7 @@ window.onload = () => {
       email: formData.get("email"),
     };
 
-    // Obs estou usando o jsonplaceholder apenas como um mero exemplo e por isso não estou seguindo a sua nomenclatura :{userId, body e title }
-
-    fetch("https://jsonplaceholder.typicode.com/posts", {
+    fetch("Api ainda não foi definida", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
@@ -26,3 +24,6 @@ window.onload = () => {
       });
   });
 };
+
+//  o Aluno Rodrigo me ajudou a desenvolver o menu hamburguer, estive com bastante dificuldade
+// o mesmo se dispos a me ajudar!

@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./_about.scss" /> 
-    <script src="./hamburguer/main.js"></script>   
-    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="./_contact.scss" />
+    <script src="./hamburguer/form.js"></script>
+    <script src="./hamburguer/main.js"></script>
+    <title>Contato</title>
   </head>
   <body>
-
     <header>
       <nav class="navbar flex space-between">
         <div class="container flex space-between">
@@ -51,173 +51,35 @@
         </div>
       </nav>
     </header>
-
-
-    <section class="about">
-      <div class="about-card flex">
-        <img
-          class="about-card-img"
-          src="./images/perfil.jpg"
+    <section class="c-main">
+      <div class="c-main__title">
+        <h1 class="c-main__title--text">Contato</h1>
+      </div>
+      <div class="c-main__subtitle">
+        <p class="c-main__subtitle--text">Entre em contato e saiba mais!!!</p>
+      </div>
+      <div class="c-main__form-box">
+        <form class="form">
+          <label for="name" class="label">Seu nome</label>
+          <input type="text" name="name" id="name-label" placeholder="Nome" />
+          <label for="email" class="label">Seu e-mail</label>
+          <input
+            type="text"
+            name="email"
+            id="email-label"
+            placeholder="meu.email@gmail.com"
           />
-          <div class="about-card-content">
-            <h2 class="about-card-title">Alessandro Carra Rodrigues Santiago</h2>
-            <p class="about-card-description">
-            Aos 18 anos consegui meu primeiro emprego como eletricista no ramo de construção de linhas aéreas, e trabalhei em diversas empresas parceiras no setor de fornecimento de energia elétrica, até que em 2014 migrei para o setor eletro/eletrônico, onde eu pude trabalhar com manutenção de painéis eletrônicos em Led, em 2015 me tornei responsável pelos equipamentos em led da empresa e me formei como técnico em mecatrônica(profissão essa que eu nunca exerci). Em 2019 decidi arriscar e aceitar o desafio de ser técnico pleno em uma empresa de mídias e trabalhei na manutenção de telas nos vagos do metrô no RJ, infelizmente durante a pandemia vi meu contrato sendo reincidido e o desespero batendo a porta, em maio de 2020 consegui voltar ao mercado de trabalho e voltei a atuar como eletricista de rede aérea, e durante algum tempo achei que era esse o fim da linha, que estava bem, mas tive 2 rupturas no menisco e vi que não conseguiria levar essa profissão por muitos anos e decidi mudar, inovar e apostar mais uma vez. 
-
-            Aos 30 anos decidi me aventurar nessa jornada do conhecimento, larguei para trás todo conhecimento que obtive ao longo dos anos em eletrônica e eletrotécnica e decidi fazer como profissão o mundo de desenvolvimento web. Atualmente estudo na Ibrm - Análise e desenvolvimento de sistemas, desenvolvimento Web com o curso Otterwise.
-            Utilizo plataformas como Alura e Udemy no intuito de estar sempre desenvolvendo meus conhecimentos. 
-            No momento trabalho como backend no Grupo Gera.
-            
-            Desistir dos sonhos é abrir mão da felicidade, porque quem não persegue seus objetivos está condenado a fracassar 100% das vezes...
-
-            
-            <p><a href="mailto:alessandro.acs@hotmail.com">E-mail:alessandro.acs@hotmail.com</a></p>
-          </p>
-          
-        </div>
+          <label for="message" class="label">Mensagem</label>
+          <input
+            type="text"
+            name="message"
+            id="message-label"
+            placeholder="Olá..."
+          />
+          <button type="submit" class="btn">Enviar</button>
+        </form>
       </div>
     </section>
-
-
-    <div class="skills">
-
-      <div class="skills__container">
-
-        <div class="first__container">
-
-          <div class="skills__responsive">
-
-            <div class="skills__responsive--icons">
-              <img src="./images/mobile.svg" alt="Mobile Icon">
-            </div>        
-            
-            <div class="skills__responsive--title">
-              <p class="skills__responsive--paragraph">Responsive design</p>
-            </div>
-  
-            <div class="skill__reponsive--info">
-  
-              <p> 
-                é uma abordagem ao design da Web que faz as páginas da web renderizarem bem em uma variedade de dispositivos e tamanhos de janela ou tela do mínimo ao máximo. Trabalhos recentes também consideram a proximidade do visualizador como parte do contexto de visualização como uma extensão para WDR. Conteúdo, design e desempenho são necessários em todos os dispositivos para garantir usabilidade e satisfação.[
-
-              </p>
-  
-            </div>
-              
-          </div>
-  
-          <div class="skills__html">
-  
-            <div class="skills__html--icons">
-              <img src="./images/html.svg" alt="Html Icon">
-            </div>  
-  
-            <div class="skills__html--title">
-              <p class="skills__html--paragraph">HTML,CSS e JS</p>
-            </div>
-  
-            <div class="skills__html--info">
-              <p>
-                A base da programação Front-End é o tripé: HTML + CSS + Javascript. Estas três linguagens de programação se completam e juntas elas trabalham de forma uniforme, como se fossem um ser humano perfeito.
-
-                Elas funcionam da seguinte forma:
-                <p>
-                <p>O HTML é a base da programação (como se fosse o esqueleto o corpo)</p>
-                <p>O CSS é o que dá estilo aos códigos (como se fosse a roupa que a pessoa utiliza)</p>
-                <p>O Javascript é o que dá movimento e ação  (como se fosse o espírito do corpo)</p>
-                </p>
-              </p>
-            </div>
-              
-          </div>
-  
-          <div class="skills__cooworking">
-            
-            <div class="skills__cooworking--icons">
-              <img src="./images/coowrking.svg" alt="coowrking Icon">
-            </div>
-  
-            <div class="skills__cooworking--title">
-              <p class="skills__cooworking--paragraph">Cooworking</p>
-            </div>
-  
-            <div class="skills__coowrking--info">
-              <p>
-                Coworking é um espaço onde várias empresas e freelancers compartilham o mesmo ambiente de trabalho e ideias, dividindo entre si as despesas gerais e os locais de área comum. O local onde é possível trocar experiências com outros profissionais de áreas de atuação e de empresas diferentes, fazendo com que seja criada uma rede de networking incrível, em um espaço onde várias empresas e freelancers compartilham o mesmo ambiente de trabalho e ideias, dividindo entre si as despesas gerais e os locais de área comum.
-
-              </p>
-            </div>
-              
-          </div>
-
-        </div>    
-        
-        <div class="second__container">
-
-          <div class="skills__comunication">
-
-            <div class="skills__comunication--icons">
-              <img src="./images/comunication.svg" alt="Comunication Icon">
-            </div>  
-  
-            <div class="skills__comunication--title">
-              <p class="skills__comunication--paragraph">Comunicação</p>
-            </div>
-  
-            <div class="skills__comunication--information">
-              <p>
-                <p>a soft skill mais requisitada do momento
-                  As soft skills são habilidades que não estão diretamente ligadas à capacidade de exercer alguma função específica, e sim de que forma o profissional lida com determinados acontecimentos relacionados à rotina de sua atividade.
-                </p>
-            </div>
-              
-          </div>
-          
-          <div class="skills__pixel">
-  
-            <div class="skills__pixel--icons">
-              <img src="./images/pixel.svg" alt="Pixel Icon">
-            </div>    
-  
-            <div class="skills__pixel--title">
-  
-              <p class="skills__pixel--paragraph">Pixel perfect</p>
-  
-            </div>
-  
-            <div class="skills__pixel--information">
-             <p>
-              O Pixel Perfect é uma ferramenta incorporada ao Android Device Monitor que exibe uma visualização ampliada do app para que você possa inspecionar a posição e as propriedades de pixels individuais no seu layout e combinar o layout do app com modelos de design.
-
-             </p>
-            </div>
-              
-          </div>
-          <div class="skills__interaction"> 
-  
-            <div class="skills__interaction--icons">
-              <img src="./images/interaction.svg" alt="interaction Icon">
-            </div> 
-  
-            <div class="skills__inteaction--title">
-              <p class="skills__interaction--paragraph">Interação</p>
-            </div>
-  
-            <div class="skills__interaction--information">
-              <p>
-                A Interação é um tipo de ação que ocorre entre duas ou mais entidades quando a ação de uma delas provoca uma reação da outra ou das restantes. Por oposição à unidirecionalidade do conceito de causalidade, a subjacente bidirecionalidade ou mesmo interatividade é essencial no conceito de Interação.
-
-              </p>
-            </div>
-              
-          </div>
-  
-        </div>
-
-       </div>
-
-    </div>
-
     <footer class="footer flex">
       <div class="container footer__border">
         <div class="footer-content flex">
